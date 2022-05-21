@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {HashRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './Home';
+import Blog from './Blog';
+import Fruits from './Fruits';
+import FoodRepo from './FoodRepo';
+import PersonalRemedies from './PersonalRemedies';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Router>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/blogs" element={<Blog />} />
+      <Route path="/fruits" element={<Fruits />} />
+      <Route path="/food-repo" element={<FoodRepo />} />
+      <Route path="/personal-remedies" element={<PersonalRemedies />} />
+    </Routes>
+  </Router>
   );
 }
 

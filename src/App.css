@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+}.list-group{
+  max-height: 76vh;
+  padding: 5px;
+  overflow: auto;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #e07423 !important;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgb(245 214 182) !important;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  color: #504e4e !important;
 }
