@@ -25,7 +25,7 @@ function Home() {
 
           <Link className='btn btn-outline-dark btn-outline btn-lg px-5 m-5' to='/personal-remedies' >
           <i className="fas fa-seedling mx-2"></i>
-          Personal Remedies</Link>
+          Search Recipes</Link>
           </div>
       </div></div></div>
   </div>
