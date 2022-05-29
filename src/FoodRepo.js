@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react'
+import Loading from './components/Loading';
 import TopBar from './components/TopBar';
 
 function FooRepo() {
@@ -36,7 +37,7 @@ function FooRepo() {
     <div className='container'>
     <div className='row'>
       <div className='col-md-12'>
-        {loading && !error ? <div className='col-md-12'>Loading...</div> :
+        {loading && !error ? <Loading loading={loading}/> :
           <div className='card'>
             <div className='card-header'>
               <h4>Food Repo</h4>
@@ -64,7 +65,9 @@ function FooRepo() {
                       food[active].ingredients_translations["en"] :"No ingredients"}
                       </p>
                     <h5>Nutrients</h5>
-                    <h6> Carbohydrates </h6>
+                    <div className='row'>
+                      <div className='col-md-4'>
+                      <h6> Carbohydrates </h6>
                     <p> Per Day {
                     food[active].nutrients ? food[active].nutrients.carbohydrates.per_day : "No nutrients"}
                     </p>
@@ -76,33 +79,6 @@ function FooRepo() {
                     </p>
                     <p> Unit {
                     food[active].nutrients ? food[active].nutrients.carbohydrates.unit : "No nutrients"}
-                    </p>
-                    <h6> Fat </h6>
-                    <p> Per Day {
-                    food[active].nutrients ? food[active].nutrients.fat.per_day : "No nutrients"}
-                    </p>
-                    <p> Per Hundred {
-                    food[active].nutrients ? food[active].nutrients.fat.per_hundred : "No nutrients"}
-                    </p>
-                    <p> Per Portion {
-                    food[active].nutrients ? food[active].nutrients.fat.per_portion : "No nutrients"}
-                    </p>
-                    <p> Unit {
-                    food[active].nutrients ? food[active].nutrients.fat.unit : "No nutrients"}
-                    </p>
-
-                    <h6> Protein </h6>
-                    <p> Per Day {
-                    food[active].nutrients ? food[active].nutrients.protein.per_day : "No nutrients"}
-                    </p>
-                    <p> Per Hundred {
-                    food[active].nutrients ? food[active].nutrients.protein.per_hundred : "No nutrients"}
-                    </p>
-                    <p> Per Portion {
-                    food[active].nutrients ? food[active].nutrients.protein.per_portion : "No nutrients"}
-                    </p>
-                    <p> Unit {
-                    food[active].nutrients ? food[active].nutrients.protein.unit : "No nutrients"}
                     </p>
                     <h6> Sodium </h6>
                     <p> Per Day {
@@ -117,6 +93,22 @@ function FooRepo() {
                     <p> Unit {
                     food[active].nutrients.sodium ? food[active].nutrients.sodium.unit : "No nutrients"}
                     </p>
+
+                      </div>
+                      <div className='col-md-4'>
+                      <h6> Fat </h6>
+                    <p> Per Day {
+                    food[active].nutrients ? food[active].nutrients.fat.per_day : "No nutrients"}
+                    </p>
+                    <p> Per Hundred {
+                    food[active].nutrients ? food[active].nutrients.fat.per_hundred : "No nutrients"}
+                    </p>
+                    <p> Per Portion {
+                    food[active].nutrients ? food[active].nutrients.fat.per_portion : "No nutrients"}
+                    </p>
+                    <p> Unit {
+                    food[active].nutrients ? food[active].nutrients.fat.unit : "No nutrients"}
+                    </p>
                     <h6> Sugars </h6>
                     <p> Per Day {
                     food[active].nutrients.sodium ? food[active].nutrients.sugars.per_day : "No nutrients"}
@@ -130,6 +122,24 @@ function FooRepo() {
                     <p> Unit {
                     food[active].nutrients ? food[active].nutrients.sugars.unit : "No nutrients"}
                     </p>
+
+                      </div>
+                      <div className='col-md-4'>
+                      <h6> Protein </h6>
+                    <p> Per Day {
+                    food[active].nutrients ? food[active].nutrients.protein.per_day : "No nutrients"}
+                    </p>
+                    <p> Per Hundred {
+                    food[active].nutrients ? food[active].nutrients.protein.per_hundred : "No nutrients"}
+                    </p>
+                    <p> Per Portion {
+                    food[active].nutrients ? food[active].nutrients.protein.per_portion : "No nutrients"}
+                    </p>
+                    <p> Unit {
+                    food[active].nutrients ? food[active].nutrients.protein.unit : "No nutrients"}
+                    </p>
+                      
+                   
                     <h6> Energy </h6>
                     <p> Per Day {
                     food[active].nutrients ? food[active].nutrients.energy.per_day : "No nutrients"}
@@ -143,19 +153,14 @@ function FooRepo() {
                     <p> Unit {
                     food[active].nutrients ? food[active].nutrients.energy.unit : "No nutrients"}
                     </p>
-                    <h6> Saturated Fat </h6>
-                    <p> Per Day {
-                    food[active].nutrients ? food[active].nutrients.saturated_fat.per_day : "No nutrients"}
-                    </p>
-                    <p> Per Hundred {
-                    food[active].nutrients ? food[active].nutrients.saturated_fat.per_hundred : "No nutrients"}
-                    </p>
-                    <p> Per Portion {
-                    food[active].nutrients ? food[active].nutrients.saturated_fat.per_portion : "No nutrients"}
-                    </p>
-                    <p> Unit {
-                    food[active].nutrients ? food[active].nutrients.saturated_fat.unit : "No nutrients"}
-                    </p>
+                      </div>
+
+                    </div>
+                    
+                   
+                   
+                 
+                    
                     </div>
                     </div></div>
                   <div className='card-footer'>

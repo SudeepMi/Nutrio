@@ -36,7 +36,6 @@
     transform: rotate(360deg);
   }
 }.list-group{
-  max-height: 76vh;
   padding: 5px;
   overflow: auto;
 }

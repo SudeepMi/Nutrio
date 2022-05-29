@@ -5,6 +5,8 @@ import Blog from './Blog';
 import Fruits from './Fruits';
 import FoodRepo from './FoodRepo';
 import PersonalRemedies from './PersonalRemedies';
+import Petfood from './Petfood';
+import Findfood from './Findfood';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Route path="/fruits" element={<Fruits />} />
       <Route path="/food-repo" element={<FoodRepo />} />
       <Route path="/personal-remedies" element={<PersonalRemedies />} />
+      <Route path='/pet-foods' element={<Petfood />} />
+      <Route path='/find-foods' element={<Findfood />} />
     </Routes>
   </Router>
   );

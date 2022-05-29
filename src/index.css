@@ -18,3 +18,84 @@ code {
   display: grid;
   place-content: center;
 }
+@media screen and (max-width: 768px) {
+  .link_btn{
+    width: 100%;
+  }
+}
+
+#petSection .card{
+  min-height: 50vh;
+  display: grid;
+  place-content: stretch;
+}
+
+#petSection .card-title{
+  font-size: 15px;
+  font-weight: normal;
+}
+#petSection .card-footer{
+  place-content: center;
+  background-color: #ffc5a1a3;
+}
+#petSection a{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+.badge-info {
+  color: #fff;
+  background-color: #17a2b8;
+}
+.badge-light {
+  color: #212529;
+  background-color: #9effe9;
+}
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+.__focus p{
+  margin-bottom: 5px !important;
+}
+
+

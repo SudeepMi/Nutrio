@@ -14,28 +14,28 @@ function Home() {
               </div>
           </div>
           <div className='apps d-flex justify-content-center flex-wrap'>
-          <Link className='btn btn-outline-info btn-outline btn-lg px-5 m-4 w-25' to="/blogs" >
+          <Link className='btn btn-outline-info btn-outline btn-block link_btn px-5 m-4' to="/blogs" >
           <i className="fab fa-blogger mx-2"></i>
           Blogs</Link>
 
-          <Link className='btn btn-outline-danger btn-outline btn-lg px-5 m-4 w-25' to='/fruits' >
+          <Link className='btn btn-outline-danger btn-outline btn-block link_btn px-5 m-4' to='/fruits' >
           <i className="fas fa-carrot mx-2"></i>
           Fruity Fruits </Link>
 
-          <Link className='btn btn-outline-primary btn-outline btn-lg px-5 m-4 w-25' to='/food-repo' >
+          <Link className='btn btn-outline-primary btn-outline btn-block link_btn px-5 m-4' to='/food-repo' >
           <i className="fas fa-utensils mx-2"></i>
           Food Repository </Link>
 
-          <Link className='btn btn-outline-secondary btn-outline btn-lg px-5 m-4 w-25' to='/personal-remedies' >
+          <Link className='btn btn-outline-secondary btn-outline btn-block link_btn px-5 m-4' to='/personal-remedies' >
           <i className="fas fa-seedling mx-2"></i>
           Search Recipes</Link>
 
-          <Link className='btn btn-outline-dark btn-outline btn-lg px-5 m-4 w-25' to='/pet-foods' >
-          <i className="fas fa-seedling mx-2"></i>
-          Pet Foods</Link>
+          <Link className='btn btn-outline-dark btn-outline btn-block link_btn px-5 m-4' to='/find-foods' >
+          <i className="fas fa-search mx-2"></i>
+          Find Foods</Link>
 
-          <Link className='btn btn-outline-dark btn-outline btn-lg px-5 m-4 w-25' to='/pet-foods' >
-          <i className="fas fa-seedling mx-2"></i>
+          <Link className='btn btn-outline-success btn-outline btn-block link_btn px-5 m-4' to='/pet-foods' >
+          <i className="fas fa-cat mx-2"></i>
           Pet Foods</Link>
 
           

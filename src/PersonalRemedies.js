@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react'
-import PR from './components/PR';
+import Loading from './components/Loading';
 import TopBar from './components/TopBar';
 
 function Recipe() {
@@ -41,16 +41,18 @@ function Recipe() {
     <div>
        <div>
             <TopBar component={"personal-remedies"} />
+            {error && <div className='alert alert-danger'>{error.message}</div>}
             <div className='container-fluid px-5'>
                 <div className='row'>
                     <div className='col-md-12 d-flex my-5'>
-                        <input type={'text'} className='form-control mx-5' placeholder={'Search'} onChange={e=>setQuery(e.target.value)} />
+                        <input type={'text'} className='form-control mx-5' placeholder={'Find foods and recipe, Momo, mojito,....'} onChange={e=>setQuery(e.target.value)} />
                         <button className='btn btn-outline-dark btn-outline btn-lg px-5 my-1' onClick={()=>handleSearch()}>
                             Search
                         </button>
-                        {loading && <div>Loading...</div>}
+                      
                       </div>
                         <div className='row'>
+                        <Loading loading={loading} />
                             { recipes.map((recipe, index) => (
                                 <div className='col-md-4' key={index}>
                                     <div className='card my-4'>
