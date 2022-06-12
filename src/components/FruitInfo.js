@@ -14,7 +14,7 @@ function FruitInfo({ fruit }) {
             url: `https://fit-life-food.p.rapidapi.com/nutrition/${String(fruit).toLowerCase()}`,
             headers: {
               'X-RapidAPI-Host': 'fit-life-food.p.rapidapi.com',
-              'X-RapidAPI-Key': '4c867d69ccmsh0bdd9cea6e20c70p15487cjsn0dd816841b19'
+              'X-RapidAPI-Key': 'b2f6ba06famsh5264530520991b8p1a3166jsn7560eab95ab0'
             }
           };
         const options_ = {
@@ -22,7 +22,7 @@ function FruitInfo({ fruit }) {
             url: `https://fit-life-food.p.rapidapi.com/recipes/${String(fruit).toLowerCase()}`,
             headers: {
               'X-RapidAPI-Host': 'fit-life-food.p.rapidapi.com',
-              'X-RapidAPI-Key': '4c867d69ccmsh0bdd9cea6e20c70p15487cjsn0dd816841b19'
+              'X-RapidAPI-Key': 'b2f6ba06famsh5264530520991b8p1a3166jsn7560eab95ab0'
             }
           };
         await axios.request(options).then(function (response) {
