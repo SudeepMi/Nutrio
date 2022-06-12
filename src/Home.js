@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from './assets/logo.png';
+import Install from './components/Install';
 
 function Home() {
   return (
     <div className='container'>
+      <Install />
     <div className='row'>
       <div className='col-md-12'>
         <div className='jumbotron text-center'>

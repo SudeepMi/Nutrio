@@ -8,8 +8,17 @@ import PersonalRemedies from './PersonalRemedies';
 import Petfood from './Petfood';
 import Findfood from './Findfood';
 import About from './About';
+import React from 'react';
+import { getUserSubscription, isPushNotificationSupported, registerServiceWorker } from './Pwa';
+import Install from './components/Install';
 
 function App() {
+  React.useEffect(() => {
+    isPushNotificationSupported();
+    registerServiceWorker();
+    getUserSubscription();
+  }, [])
+  
   return (
     
     <Router>
