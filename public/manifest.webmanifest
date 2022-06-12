@@ -1,7 +1,7 @@
 {
     "theme_color": "#eaaf84",
     "background_color": "#926133",
-    "display": "fullscreen",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "All About Nutrition",
