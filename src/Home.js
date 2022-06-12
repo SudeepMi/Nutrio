@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from './assets/logo.png';
 import Install from './components/Install';
-
+import "./Home.css"
 function Home() {
   return (
     <div className='container'>
@@ -15,7 +15,7 @@ function Home() {
                 <img src={logo} className='app-logo img-responsive py-1' alt='logo' width={'100%'} />
               </div>
           </div>
-          <div className='apps d-flex justify-content-center flex-wrap'>
+          <div className='apps d-flex justify-content-center flex-wrap' id='apps'>
           <Link className='btn btn-light btn-outline btn-block link_btn px-5 m-4' to="/blogs" >
           <i className="fab fa-blogger mx-2"></i>
           Blogs</Link>
