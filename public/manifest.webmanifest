@@ -27,5 +27,16 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "shortcuts" : [
+        {
+          "name": "Blogs",
+          "url": "/#/blogs",
+          "description": "List of events planned for today"
+        },
+        {
+          "name": "Fruits",
+          "url": "/#/fruits"
+        }
+      ]
 }
